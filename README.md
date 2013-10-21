@@ -19,12 +19,13 @@ How to use it?
 
 * In lfs_project/settings.py comment or delete the default backend configuration and add the following code:
 
-#LDAP BACKEND SETTINGS
+LDAP BACKEND SETTINGS
 
 import ldap
 from django_auth_ldap.config import LDAPSearch
 
-#insert your ldap server URI 
+INSERT YOUR LDAP SERVER URI 
+
 AUTH_LDAP_SERVER_URI = "ldap://ldap.example.com"
 AUTH_LDAP_BIND_DN = ""
 AUTH_LDAP_BIND_PASSWORD = ""
@@ -35,9 +36,10 @@ AUTHENTICATION_BACKENDS = (
             'django.contrib.auth.backends.ModelBackend',
             )
             
-#attribute mapping example
+ATTRIBUTE MAPPING EXAMPLE
+
 AUTH_LDAP_USER_ATTR_MAP = {"username": "USERNAME", "last_name": "SN", "first_name": "FN", "email": "E-MAIL"}
- 
+
 * Browse to http://localhost:8000
 
 More Information

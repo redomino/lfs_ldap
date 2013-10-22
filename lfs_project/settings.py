@@ -184,6 +184,8 @@ AUTHENTICATION_BACKENDS = (
 #attribute mapping example
 AUTH_LDAP_USER_ATTR_MAP = {"username": "USERNAME", "last_name": "SN", "first_name": "FN", "email": "E-MAIL"}
 
+AUTH_LDAP_ALWAYS_UPDATE_USER = True
+
 """
 #comment previous configuration
 AUTHENTICATION_BACKENDS = (

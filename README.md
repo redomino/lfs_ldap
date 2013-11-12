@@ -6,8 +6,8 @@ If you want to install Django LFS [http://www.getlfs.com/] with ldap support, yo
 How to use it?
 ==============
 
-* git clone git@github.com:redomino/lfs_ldap.git
-* cd lfs_ldap
+* git clone git@github.com:redomino/lfs_ldap_buildout.git
+* cd lfs_ldap_buildout
 * python bootstrap.py
 * virtualenv --no-site-packages . 
 * bin/buildout -v 

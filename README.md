@@ -8,8 +8,8 @@ How to use it?
 
 * git clone git@github.com:redomino/lfs_ldap_buildout.git
 * cd lfs_ldap_buildout
-* python bootstrap.py
-* virtualenv --no-site-packages . 
+* virtualenv --no-site-packages .
+* bin/python bootstrap.py
 * bin/buildout -v 
 * Enter your database settings to lfs_project/settings.py 
 * bin/django syncdb
